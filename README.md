@@ -22,6 +22,8 @@ Ansible role to configure screensaver
 
 ### screensaver_ask_for_password
 
+Ask for a password to leave screensaver
+
 #### Default value
 
 ```YAML
@@ -29,6 +31,8 @@ screensaver_ask_for_password: true
 ```
 
 ### screensaver_idle_time
+
+Define idle timeout duration
 
 #### Default value
 
@@ -38,6 +42,8 @@ screensaver_idle_time: 300
 
 ### screensaver_password_delay
 
+Password promt delay
+
 #### Default value
 
 ```YAML
@@ -45,6 +51,8 @@ screensaver_password_delay: 0
 ```
 
 ### screensaver_show_clock
+
+Show a clock on screensaver
 
 #### Default value
 
@@ -54,7 +62,7 @@ screensaver_show_clock: true
 
 ### screensaver_user
 
-Password promt delay
+User to run user-specific commands, defaults to homebrew_user
 
 ## Dependencies
 
