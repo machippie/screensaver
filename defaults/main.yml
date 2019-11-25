@@ -3,16 +3,16 @@
 # @var screensaver_user:description: User to run user-specific commands, defaults to homebrew_user
 # screensaver_user:
 
-# @var screensaver_user:description: Define idle timeout duration
+# @var screensaver_idle_time:description: Define idle timeout duration
 screensaver_idle_time: 300
 
-# @var screensaver_user:description: Show a clock on screensaver
+# @var screensaver_show_clock:description: Show a clock on screensaver
 screensaver_show_clock: True
 
-# @var screensaver_user:description: Ask for a password to leave screensaver
+# @var screensaver_ask_for_password:description: Ask for a password to leave screensaver
 screensaver_ask_for_password: True
 
-# @var screensaver_user:description: Password promt delay
+# @var screensaver_password_delay:description: Password promt delay
 screensaver_password_delay: 0
 
 ...
