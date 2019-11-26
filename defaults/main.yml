@@ -1,6 +1,7 @@
 # Standards: 0.1
 ---
-# @var screensaver_user:description: User to run user-specific commands, defaults to homebrew_user
+# @var screensaver_user:description: User to run user-specific commands
+# @var screensaver_user:value: screensaver_user | default(homebrew_user) | default(ansible_user_id)
 # screensaver_user:
 
 # @var screensaver_idle_time:description: Define idle timeout duration
