@@ -7,7 +7,7 @@ Ask for a password to leave screensaver
 
 #### Default value
 
-```YAML
+```yaml
 screensaver_ask_for_password: true
 ```
 
@@ -17,7 +17,7 @@ Define idle timeout duration
 
 #### Default value
 
-```YAML
+```yaml
 screensaver_idle_time: 300
 ```
 
@@ -27,7 +27,7 @@ Password promt delay
 
 #### Default value
 
-```YAML
+```yaml
 screensaver_password_delay: 0
 ```
 
@@ -37,7 +37,7 @@ Show a clock on screensaver
 
 #### Default value
 
-```YAML
+```yaml
 screensaver_show_clock: true
 ```
 
@@ -47,7 +47,7 @@ User to run user-specific commands
 
 #### Default value
 
-```YAML
+```yaml
 screensaver_user | default(homebrew_user) | default(ansible_user_id)
 ```
 ## Dependencies
