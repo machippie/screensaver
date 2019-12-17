@@ -2,12 +2,12 @@
 ---
 - name: Fact screesaver user
   set_fact:
-    screensaver_user: '{{ screensaver_user | default(homebrew_user) | default(ansible_user_id) }}'
+    screensaver_user: "{{ screensaver_user | default(homebrew_user) | default(ansible_user_id) }}"
   tags:
     - screensaver
 
-- become: '{{ (screensaver_user != ansible_user_id) | bool }}'
-  become_user: '{{ screensaver_user }}'
+- become: "{{ (screensaver_user != ansible_user_id) | bool }}"
+  become_user: "{{ screensaver_user }}"
   block:
     - name: Define idle time
       osx_defaults:
@@ -15,7 +15,7 @@
         key: idleTime
         host: currentHost
         type: int
-        value: '{{ screensaver_idle_time }}'
+        value: "{{ screensaver_idle_time }}"
         state: present
       tags:
         - screensaver
@@ -26,7 +26,7 @@
         key: showClock
         host: currentHost
         type: bool
-        value: '{{ screensaver_show_clock }}'
+        value: "{{ screensaver_show_clock }}"
         state: present
       tags:
         - screensaver
@@ -36,7 +36,7 @@
         domain: com.apple.screensaver
         key: askForPassword
         type: bool
-        value: '{{ screensaver_ask_for_password }}'
+        value: "{{ screensaver_ask_for_password }}"
         state: present
       tags:
         - screensaver
@@ -46,7 +46,7 @@
         domain: com.apple.screensaver
         key: askForPasswordDelay
         type: int
-        value: '{{ screensaver_password_delay }}'
+        value: "{{ screensaver_password_delay }}"
         state: present
       tags:
         - screensaver
