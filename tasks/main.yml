@@ -35,7 +35,7 @@
       osx_defaults:
         domain: com.apple.screensaver
         key: askForPassword
-        type: bool
+        type: int
         value: "{{ screensaver_ask_for_password }}"
         state: present
       tags:

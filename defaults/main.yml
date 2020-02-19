@@ -11,7 +11,7 @@ screensaver_idle_time: 300
 screensaver_show_clock: True
 
 # @var screensaver_ask_for_password:description: Ask for a password to leave screensaver
-screensaver_ask_for_password: True
+screensaver_ask_for_password: 1
 
 # @var screensaver_password_delay:description: Password promt delay
 screensaver_password_delay: 0
