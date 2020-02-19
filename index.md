@@ -8,7 +8,7 @@ Ask for a password to leave screensaver
 #### Default value
 
 ```yaml
-screensaver_ask_for_password: true
+screensaver_ask_for_password: 1
 ```
 
 ### screensaver_idle_time
