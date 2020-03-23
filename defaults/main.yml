@@ -8,7 +8,7 @@
 screensaver_idle_time: 300
 
 # @var screensaver_show_clock:description: Show a clock on screensaver
-screensaver_show_clock: True
+screensaver_show_clock: False
 
 # @var screensaver_ask_for_password:description: Ask for a password to leave screensaver
 screensaver_ask_for_password: 1
