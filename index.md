@@ -38,7 +38,7 @@ Show a clock on screensaver
 #### Default value
 
 ```yaml
-screensaver_show_clock: true
+screensaver_show_clock: false
 ```
 
 ### screensaver_user
